@@ -14,10 +14,10 @@ def calc(a,b,c):
         c = float(c)
     except:
         (None,None,Case.x_err)
-    D = b**2 - 4 * c
-    if D < 0:
+    D = b**2 - 4 * a * c
+    if D < -0.001:
         return (None,None,Case.x_no)
-    elif D > 0:
+    elif D > 0.001:
         x1 = (-b - sqrt(b**2 - 4 * a * c)) / (2 * a)
         x2 = (-b + sqrt(b**2 - 4 * a * c)) / (2 * a)
         x1 = x1.real
