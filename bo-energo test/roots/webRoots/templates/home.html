@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>-->
+    <title>Roots</title>
+</head>
+
+<body>
+    <h3>Введите числа</h3>
+    <form>
+        <span class="katex-html" aria-hidden="true">
+            <span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span>
+                <span class="mord mathnormal"><input name="a"></input></span><span class="mspace"
+                    style="margin-right:0.2222222222222222em;"></span>
+                <span class="mbin">⋅</span><span class="mspace"
+                    style="margin-right:0.2222222222222222em;"></span></span>
+            <span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span
+                    class="mord">
+                    <span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                class="vlist-r">
+                                <span class="vlist" style="height:0.8141079999999999em;"><span
+                                        style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span>
+                                        <span class="sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight">2</span></span></span></span></span></span></span></span>
+                <span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span
+                    class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base">
+                <span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span
+                    class="mord mathnormal"><input name="b"></input></span><span class="mspace"
+                    style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                    style="margin-right:0.2222222222222222em;"></span></span>
+            <span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span>
+                <span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222222222222222em;">
+
+                </span><span class="mbin">+</span><span class="mspace"
+                    style="margin-right:0.2222222222222222em;"></span></span>
+            <span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span
+                    class="mord mathnormal"><input name="c"></input></span><span class="mspace"
+                    style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut"
+                    style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span>
+        <input type="submit" value="Submit">
+    </form>
+    <h4>Result</h4>
+    {%if case == case.x1%}
+        {{x1|floatformat}}
+    {%elif case == case.x2%}
+        {{x1|floatformat}},{{x2|floatformat}}
+    {%elif case == case.x_no%}    
+        No solutions
+    {%else%}
+        Error
+    {%endif%}
+</body>
+
+</html>
